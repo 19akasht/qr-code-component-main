@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;padding: 0;box-sizing: border-box;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { margin-top:20px}
+
+    :root{
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+      --font:font-family: 'Outfit', sans-serif;
+    }
+    body{
+      width: 93vw;
+      height: 91vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--Light-gray);
+      font-family: 'Outfit', sans-serif;
+      margin: 0 auto;
+    }
+    body p{
+      font-size: 15px;
+    }
+    .container{
+      width: 300px;
+      height: 460px;
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--White);
+      border-radius: 20px;
+    }
+    .top{
+      width: 90%;
+      height: 250px;
+      background-image: url("images/image-qr-code.png");
+      background-position: center;
+      background-size: cover;
+      margin-top:15px;
+      border-radius: 10px;
+
+    }
+    .bottom{
+      padding:20px 0;
+      width: 90%;
+      height: 100px;
+      text-align: center;
+    }
+    .bottom h2{
+      font-size: 22px;
+      color: var(--Dark-blue);
+    }
+    .bottom p{
+      padding-top: 20px;
+      color: var(--Grayish-blue);
+    }
+    @media (max-width:375px){
+      body{
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+
+    </div>
+    <div class="bottom">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to <br> the next level</p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Akash Nagindar Tayde</a>.
+  </div> 
+</body>
+</html>
